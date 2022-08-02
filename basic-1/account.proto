@@ -1,8 +1,7 @@
 syntax = "proto3";
 
 // enum start tag with 0
-// normally our first tag would be UNSPECIFIED
-// naming convention would start with enum name EYE_COLOR and followed by its type GREEN
+// normally our first tag would be UNSPECIFIED/UNDEFINED
 enum EyeColor {
     EYE_COLOR_UNSPECIFIED = 0;
     EYE_COLOR_GREEN = 1;
