@@ -1,8 +1,6 @@
 syntax = "proto3";
 
-message MessageOne {
-
-}
+message MessageOne {}
 
 enum EnumOne {
     ENUM_ONE_UNSPECIFIED = 0;
