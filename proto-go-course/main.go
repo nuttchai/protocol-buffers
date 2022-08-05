@@ -42,12 +42,25 @@ func doOneOf(message interface{}) {
 	}
 }
 
+func doMap() *pb.MapExample {
+	return &pb.MapExample{
+		Ids: map[string]*pb.IdWrapper{
+			"myId1": {Id: 41},
+			"myId2": {Id: 42},
+			"myId3": {Id: 43},
+		},
+	}
+}
+
 func main() {
 	// fmt.Println(doSimple())
 	// fmt.Println(doComplex())
 	// fmt.Println(doEnum())
-	fmt.Println("This should be Id:")
-	doOneOf(&pb.Result_Id{Id: 42})
-	fmt.Println("This should be Message:")
-	doOneOf(&pb.Result_Message{Message: "a message"})
+
+	// fmt.Println("This should be Id:")
+	// doOneOf(&pb.Result_Id{Id: 42})
+	// fmt.Println("This should be Message:")
+	// doOneOf(&pb.Result_Message{Message: "a message"})
+
+	fmt.Println(doMap())
 }
