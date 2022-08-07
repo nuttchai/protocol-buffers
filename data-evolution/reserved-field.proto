@@ -1,0 +1,9 @@
+// Reserved fields example:
+
+syntax = "proto3";
+
+message Account {
+    reserved 2, 15, 9 to 11; // reserve tags
+    reserved "first_name", "last_name"; // reserve field name
+    uint32 id = 1;
+}

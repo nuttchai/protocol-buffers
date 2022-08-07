@@ -1,0 +1,17 @@
+// Removing fields example:
+
+syntax = "proto3";
+
+// From...
+// message Account {
+//     uint32 id = 1;
+//     string first_name = 2;
+// }
+
+// To...
+message Account {
+    uint32 id = 1;
+    string alias = 2;
+}
+
+// We can rename it directly (but must not change its tag). It will deserialize the first_name field to alias automattically

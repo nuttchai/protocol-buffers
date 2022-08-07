@@ -1,0 +1,18 @@
+// Removing fields example:
+
+syntax = "proto3";
+
+// From...
+// message Account {
+//     uint32 id = 1;
+//     string first_name = 2;
+// }
+
+// To...
+message Account {
+    reserved 2;
+    reserved "first_name"; // optional 
+    uint32 id = 1;
+}
+
+// we must reserve tag that its field is removed because later on we don't want to anyone to use that tag anymore. Else, it can cause unexpected behaviour

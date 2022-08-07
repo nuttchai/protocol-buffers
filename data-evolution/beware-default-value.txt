@@ -1,0 +1,13 @@
+Beware the defaults: 
+
+Advantages of default value:
+- Forward compatibility 
+- Backward compatibility
+- No null values
+
+Disadvantages of default value:
+- Cannot differentiate missing or unset
+
+What can I do:
+- No meaning in business
+- If or switch statement in the code
