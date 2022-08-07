@@ -7,4 +7,5 @@ message Simple {
     repeated int32 sample_lists = 4;
 }
 
-// decode raw data command => cat simple.bin | protoc --decode_raw
+// --decode_raw => cat simple.bin | protoc --decode_raw
+// --decode (type is given) => cat simple.bin | protoc --decode=Simple .\simple.proto
