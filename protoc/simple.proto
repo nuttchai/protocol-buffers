@@ -9,3 +9,4 @@ message Simple {
 
 // --decode_raw => cat simple.bin | protoc --decode_raw
 // --decode (type is given) => cat simple.bin | protoc --decode=Simple .\simple.proto
+// --encode (type is given) => cat simple.txt | protoc --encode=Simple .\simple.proto > simple.pb
